@@ -490,19 +490,8 @@ Os dados ficam salvos em `dados_fabrica.json`. O conteúdo abaixo é o resultado
 ##  Fluxo do Sistema
 
 ```
-Início
-  └─► Carrega dados do JSON
-        └─► Menu principal (loop)
-              ├─► [1] Cadastrar peça
-              │     ├─► Coleta: ID, peso, cor, comprimento
-              │     ├─► Valida: peso → cor → comprimento
-              │     ├─► Aprovada:  vai para caixa
-              │     └─► Reprovada: registra motivo
-              ├─► [2] Listar peças
-              ├─► [3] Remover peça
-              ├─► [4] Listar caixas
-              ├─► [5] Relatório
-              └─► [6] Salva e encerra
+Início → Carregar JSON → Menu (1:Cadastrar → Validar → Caixa / 2:Listar / 3:Remover / 4:Caixas / 5:Relatório / 6:Salvar e Sair)
+
 ```
 
 ---
